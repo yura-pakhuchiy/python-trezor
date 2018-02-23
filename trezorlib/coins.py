@@ -1,4 +1,4 @@
-from .tx_api import TxApiBitcoin, TxApiTestnet, TxApiLitecoin, TxApiZcash, TxApiDash, TxApiBcash, TxApiDecredTestnet, TxApiDogecoin, TxApiMonacoin, TxApiBitcoinGold
+from .tx_api import TxApiBitcoin, TxApiTestnet, TxApiLitecoin, TxApiZcash, TxApiDash, TxApiBcash, TxApiDecredTestnet, TxApiDogecoin, TxApiMonacoin, TxApiBitcoinGold, TxApiZcoin
 
 coins_slip44 = {
     'Bitcoin': 0,
@@ -13,6 +13,7 @@ coins_slip44 = {
     'Ether': 60,
     'EtherClassic': 61,
     'Zcash': 133,
+    'Zcoin': 136,
     'Bcash': 145,
     'Bitcoin Gold': 156,
 }
@@ -23,6 +24,7 @@ coins_txapi = {
     'Litecoin': TxApiLitecoin,
     'Dash': TxApiDash,
     'Zcash': TxApiZcash,
+    'Zcoin': TxApiZcoin,
     'Bcash': TxApiBcash,
     'Decred Testnet': TxApiDecredTestnet,
     'Dogecoin': TxApiDogecoin,
