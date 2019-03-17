@@ -159,7 +159,7 @@ class TxApi:
 
     def fetch_json(self, *path, **params):
         url = self.url + "/api/" + "/".join(map(str, path))
-        return requests.get(url, params=params).json(parse_float=Decimal)
+        return requests.get(url, params=params).json(parse_float=str)
 
     def get_block_hash(self, block_number):
         j = self.fetch_json("block-index", block_number)
